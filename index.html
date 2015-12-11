@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="From Visual Exploration to Story Telling and Back Again">
+    <meta charset="utf-8">
+    <title>From Visual Exploration to Story Telling and Back Again</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body data-spy="scroll" data-target="navbar-collapse-1">
+    <header class="jumbotron subhead" id="overview">
+      <div class="container">
+        <h1>
+          <img src="images/caleydo_c.svg" style="width:110px;position:relative; top:-5px;margin-right:15px;">CLUE
+        </h1>
+        <p class="lead" style="margin-left:5px;">From Visual Exploration to Story Telling and Back Again</p>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <section id="about">
+            <h2 class="page-header">About</h2>
+            <p>
+              The primary goal of visual data exploration tools is to enable discovery of new insights. To justify such insights, the discovery process needs to be documented and communicated.
+              A common approach to document and present such findings is to capture visualizations as images or videos. Images, however, are insufficient for telling the story of visual discovery,
+              as they lack full provenance information and context. Videos are difficult to produce and edit, in particular due to the non-linear nature of the exploratory process.
+              Most importantly, however, neither approach provides the opportunity to return to any point in the exploration in order to review the state of the
+              visualization in detail or to conduct additional analyses. In this paper we present CLUE (capture, label, understand, explain), a theoretical framework
+              that tightly integrates data exploration and presentation of discoveries. Based on provenance data captured during the exploratory process, users can extract
+              the key steps of the exploration, add annotations, and author "vistories" that can be shared for consumption, but that can also serve as the foundation for new discoveries.
+              We also discuss the integration of the CLUE approach in visualization tools and provide a prototypical implementation. Finally, we demonstrate the general applicability of
+              the framework in two use cases. The first employs a Gapminder-inspired visualization to explore global public health data. The second use case illustrates how CLUE
+              can be used to create vistories for the publication of exploratory findings in scientific journal
+            </p>
+          </section>
+          <section id="video">
+            <h2 class="page-header">Video</h2>
+            <video src="video/clue.mp4" controls="controls" poster="video/poster.png" style="width:100%;height:auto;"></video>-->
+          </section>
+          <section id="demo">
+            <h2 class="page-header">Demos</h2>
+            <div class="alert alert-default" role="alert">Please note: The demos are only available for <a href="https://www.google.com/chrome/browser/desktop/index.html"><i class="fa fa-chrome"></i> Google Chrome</a>.</div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./gapminder" target="_blank">
+                  <img src="images/gapminder.png" alt="GapMinder usage scenario">
+                  </a>
+                  <div class="caption">
+                    <a href="./gapminder" target="_blank">
+                      <h3>GapMinder</h3>
+                    </a>
+                    <p>Comparing Wealth vs. Life Excepectancy over time, illustrating the basic concepts of CLUE.</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="thumbnail">
+                  <a href="./stratomex" target="_blank">
+                  <img src="images/stratomex.png" alt="StratomeX usage scenario">
+                  </a>
+                  <div class="caption">
+                    <a href="./stratomex" target="_blank">
+                      <h3>StratomeX</h3>
+                    </a>
+                    <p>Reproducing previously published Use Cases of the StratomeX visualization technique, highlighting reproducibility and story telling aspects of CLUE.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        &nbsp;
+        <!--<p class="text-muted"></p>-->
+      </div>
+    </footer>
+    <!-- Le javascript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      (function($) {
+        $(document).ready(function() {
+          $('body').scrollspy({
+            target: '#navbar-collapse-1'
+          });
+        });
+      })(jQuery)
+    </script>
+    <!--<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+          var pageTracker = _gat._getTracker("@TRACKER@");
+          pageTracker._trackPageview();
+      } catch (err) {
+      }
+      </script>-->
+  </body>
+</html>
