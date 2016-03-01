@@ -38,16 +38,19 @@
           <section id="about">
             <h2 class="page-header">About</h2>
             <p>
-              The primary goal of visual data exploration tools is to enable discovery of new insights. To justify such insights, the discovery process needs to be documented and communicated.
-              A common approach to document and present such findings is to capture visualizations as images or videos. Images, however, are insufficient for telling the story of visual discovery,
-              as they lack full provenance information and context. Videos are difficult to produce and edit, in particular due to the non-linear nature of the exploratory process.
-              Most importantly, however, neither approach provides the opportunity to return to any point in the exploration in order to review the state of the
-              visualization in detail or to conduct additional analyses. In this paper we present CLUE (capture, label, understand, explain), a theoretical framework
-              that tightly integrates data exploration and presentation of discoveries. Based on provenance data captured during the exploratory process, users can extract
-              the key steps of the exploration, add annotations, and author "vistories" that can be shared for consumption, but that can also serve as the foundation for new discoveries.
-              We also discuss the integration of the CLUE approach in visualization tools and provide a prototypical implementation. Finally, we demonstrate the general applicability of
-              the framework in two use cases. The first employs a Gapminder-inspired visualization to explore global public health data. The second use case illustrates how CLUE
-              can be used to create vistories for the publication of exploratory findings in scientific journal
+              Visualization is an important data analysis method that allows scientists to explore a dataset without preconceived questions, and is thus crucial for hypothesis generation. When combined with algorithmic approaches, it bridges the gap between exploration and confirmation. Visualization is also essential in communicating research findings.
+            </p>
+            <p>
+              Current visualization tools, however, have a crucial shortcoming: the interactive visual exploration process is not captured, which means that the analysis steps cannot be shared. Being able to reproduce visual analysis sessions and enabling third parties to understand, modify, and extend analysis sessions can have a significant impact on transparency, reproducibility, and innovation of analysis processes. Furthermore, there is enormous potential to utilize visual analysis sessions to efficiently communicate data.               
+            </p>
+            <p>
+             We propose to develop methods and tools that make this vision a reality. By capturing the visual analysis process and by enabling users to comment on their decisions, we will make visual analysis reproducible. We will also leverage the data about the analysis process to allow scientists to create "Vistories", which are interactive and narrated figures, to communicate their findings. Vistories do not only efficiently communicate the findings, but also give audiences the ability to retrace and modify an analysis. Demos for our prototype for this approach are accessible at <a href="http://vistories.org">http://vistories.org</a>. 
+            </p>
+            <p>
+             In this project, we will integrate our approach for visualization with methods for computational reproducibility (Jupyter Notebooks, <a href="http://jupyter.org">http://jupyter.org</a>); improve and harden our Vistories prototype; and build a platform for the scientific community to create and publish Vistories.   
+            </p>
+            <p>
+             Our project will make two contributions to Open Science: First, we will provide analysts with an ecosystem to analyze and communicate data in a way that supports the publication of both the underlying data and the analysis process. Second, we will create a software ecosystem and provide documentation that will allow the community to integrate the Vistory approach into their tools.
             </p>
           </section>
           <section id="team">
