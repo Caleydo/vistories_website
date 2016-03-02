@@ -1,157 +1,96 @@
-<!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/Article">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Vistories: Reproducibility, Collaboration, and Communication for Exploratory and Visual Analyses">
-    <meta charset="utf-8">
-    <title>From Visual Exploration to Storytelling and Back Again</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+	<div class="col-md-9">
+	  <p>
+	  <i><span style="font-size: 1.3em;">A proposal for the <a href="https://www.openscienceprize.org/"><b>Open Science Prize</b></a></span></p><p>funded by partnership between the Wellcome Trust, the US National Institutes of Health (NIH) and the Howard Hughes Medical Institute.</i> </p>
+	  <p>
+	  <section id="about">
+		<h2 class="page-header">About</h2>
 
-    <!-- Styles -->
+		  Visualization is an important data analysis method that allows scientists to explore a dataset without preconceived questions, and is thus crucial for hypothesis generation. When combined with algorithmic approaches, it bridges the gap between exploration and confirmation. Visualization is also essential in communicating research findings.
+		</p>
+		<p>
+		  Current visualization tools, however, have a crucial shortcoming: the interactive visual exploration process is not captured, which means that the analysis steps cannot be shared. Being able to reproduce visual analysis sessions and enabling third parties to understand, modify, and extend analysis sessions can have a significant impact on transparency, reproducibility, and innovation of analysis processes. Furthermore, there is enormous potential to utilize visual analysis sessions to efficiently communicate data.
+		</p>
+		<p>
+		 We propose to develop methods and tools that make this vision a reality. By capturing the visual analysis process and by enabling users to comment on their decisions, we will make visual analysis reproducible. We will also leverage the data about the analysis process to allow scientists to create "Vistories", which are interactive and narrated figures, to communicate their findings. Vistories do not only efficiently communicate the findings, but also give audiences the ability to retrace and modify an analysis. Demos for our prototype for this approach are accessible at <a href="http://vistories.org">http://vistories.org</a>.
+		</p>
+		<p>
+		 In this project, we will integrate our approach for visualization with methods for computational reproducibility (Jupyter Notebooks, <a href="http://jupyter.org">http://jupyter.org</a>); improve and harden our Vistories prototype; and build a platform for the scientific community to create and publish Vistories.
+		</p>
+		<p>
+		 Our project will make two contributions to Open Science: First, we will provide analysts with an ecosystem to analyze and communicate data in a way that supports the publication of both the underlying data and the analysis process. Second, we will create a software ecosystem and provide documentation that will allow the community to integrate the Vistory approach into their tools.
+		</p>
+	  </section>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yantramanav:400,100,300,500">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="../assets/js/html5shiv.js"></script>
-    <![endif]-->
+	  <section id="proposal">
+		<h2 class="page-header">Proposal</h2>
+		<p><a href="proposal/vistories-openscienceprize-proposal.pdf">Download Proposal</a></p>
+	  </section>
+	  <section id="video">
+		<h2 class="page-header">Video</h2>
+		<video src="video/vistories.mp4" controls="controls" poster="video/vistories.png" style="width:100%;height:auto;"></video>
+	  </section>
+	  <section id="demo">
+		<h2 class="page-header">Demos</h2>
+		<div class="alert alert-default" role="alert">Please note: The demos have only been tested with <a href="https://www.google.com/chrome/browser/desktop/index.html"><i class="fa fa-chrome"></i> Google Chrome</a>.</div>
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico" />
-    <meta name="theme-color" content="#ffffff">
-  </head>
+		{% include vistories.html %}
+	  </section>
+	  <section id="source">
+		<h2 class="page-header">Source Code</h2>
+		<p>The source code for our prototype is <a href="https://github.com/Caleydo/caleydo_clue">available on GitHub</a>. <b>Vistories are built with </b></p>
+		   <a href="http://caleydo.org" alt="Caleydo Logo"><img style="width: 200px" src="http://caleydo.org/assets/images/logos/caleydo.svg" type="image/svg+xml"></a>
+	  </section>
+	  <section id="team">
+		<h2 class="page-header">Team</h2>
+		<p>
+		  (in alphabetical order)
+		</p>
 
-  <body data-spy="scroll" data-target="navbar-collapse-1">
-    <header class="jumbotron subhead" id="overview">
-      <div class="container">
-        <h1>
-          <img src="images/vistory-logo.svg" style="width:110px;position:relative; top:-5px;margin-right:15px;">Vistories
-        </h1>
-        <p class="lead" style="margin-left:5px;">Reproducibility, Collaboration, and Communication for Exploratory and Visual Analyses</p>
-      </div>
-    </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9">
+		<h3>Nils Gehlenborg</h3>
+		<p>Department of Biomedical Informatics at Harvard Medical School</p>
+		<p>
+		 <i class="fa fa-globe"></i>&nbsp;<a href="http://gehlenborglab.org">http://gehlenborglab.org</a> |
+		 <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/nils_gehlenborg">nils_gehlenborg</a> |
+		 <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/ngehlenborg">ngehlenborg</a>
+		</p>
 
-          <p>
-          <i><span style="font-size: 1.3em;">A proposal for the <a href="https://www.openscienceprize.org/"><b>Open Science Prize</b></a></span></p><p>funded by partnership between the Wellcome Trust, the US National Institutes of Health (NIH) and the Howard Hughes Medical Institute.</i> </p>
-          <p>
-          <section id="about">
-            <h2 class="page-header">About</h2>
+		<h3>Samuel Gratzl</h3>
+		<p>Department of Computer Science at Johannes Kepler University Linz</p>
+		<p>
+		 <i class="fa fa-globe"></i>&nbsp;<a href="http://sgratzl.github.io">http://sgratzl.github.io</a> |
+		 <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/sgratzl">sgratzl</a>
+		</p>
 
-              Visualization is an important data analysis method that allows scientists to explore a dataset without preconceived questions, and is thus crucial for hypothesis generation. When combined with algorithmic approaches, it bridges the gap between exploration and confirmation. Visualization is also essential in communicating research findings.
-            </p>
-            <p>
-              Current visualization tools, however, have a crucial shortcoming: the interactive visual exploration process is not captured, which means that the analysis steps cannot be shared. Being able to reproduce visual analysis sessions and enabling third parties to understand, modify, and extend analysis sessions can have a significant impact on transparency, reproducibility, and innovation of analysis processes. Furthermore, there is enormous potential to utilize visual analysis sessions to efficiently communicate data.
-            </p>
-            <p>
-             We propose to develop methods and tools that make this vision a reality. By capturing the visual analysis process and by enabling users to comment on their decisions, we will make visual analysis reproducible. We will also leverage the data about the analysis process to allow scientists to create "Vistories", which are interactive and narrated figures, to communicate their findings. Vistories do not only efficiently communicate the findings, but also give audiences the ability to retrace and modify an analysis. Demos for our prototype for this approach are accessible at <a href="http://vistories.org">http://vistories.org</a>.
-            </p>
-            <p>
-             In this project, we will integrate our approach for visualization with methods for computational reproducibility (Jupyter Notebooks, <a href="http://jupyter.org">http://jupyter.org</a>); improve and harden our Vistories prototype; and build a platform for the scientific community to create and publish Vistories.
-            </p>
-            <p>
-             Our project will make two contributions to Open Science: First, we will provide analysts with an ecosystem to analyze and communicate data in a way that supports the publication of both the underlying data and the analysis process. Second, we will create a software ecosystem and provide documentation that will allow the community to integrate the Vistory approach into their tools.
-            </p>
-          </section>
+		<h3>Alexander Lex</h3>
+		<p>Scientific Computing and Imaging Institute at University of Utah</p>
+		<p>
+		 <i class="fa fa-globe"></i>&nbsp;<a href="http://alexander-lex.net">http://alexander-lex.net</a> |
+		 <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/alexander_lex">alexander_lex</a> |
+		 <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/alexsb">alexsb</a>
+		</p>
 
-          <section id="proposal">
-            <h2 class="page-header">Proposal</h2>
-            <p><a href="proposal/vistories-openscienceprize-proposal.pdf">Download Proposal</a></p>
-          </section>
-          <section id="video">
-            <h2 class="page-header">Video</h2>
-            <video src="video/vistories.mp4" controls="controls" poster="video/vistories.png" style="width:100%;height:auto;"></video>
-          </section>
-          <section id="demo">
-            <h2 class="page-header">Demos</h2>
-            <div class="alert alert-default" role="alert">Please note: The demos have only been tested with <a href="https://www.google.com/chrome/browser/desktop/index.html"><i class="fa fa-chrome"></i> Google Chrome</a>.</div>
+		<h3>Marc Streit</h3>
+		<p>Department of Computer Science at Johannes Kepler University Linz</p>
+		<p>
+		 <i class="fa fa-globe"></i>&nbsp;<a href="http://marc-streit.com">http://marc-streit.com</a> |
+		 <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/marc_streit">marc_streit</a> |
+		 <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/marc_streit">marc_streit</a>
+		</p>
+		<p>
+		  <i>We thank Nicola Cosgrove (<a href="https://github.com/NicolaLady">@NicolaLady</a>) for contributions to the prototype and the video.</i>
+		</p>
+				  </section>
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./v/gapminder" target="_blank">
-                  <img src="images/gapminder.png" alt="GapMinder usage scenario">
-                  </a>
-                  <div class="caption">
-                    <a href="./v/gapminder" target="_blank">
-                      <h3>GapMinder</h3>
-                    </a>
-                    <p>Comparing Wealth vs. Life Excepectancy over time, illustrating the basic concepts of Vistories.<br><br></p>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="thumbnail">
-                  <a href="./v/stratomex" target="_blank">
-                  <img src="images/stratomex.png" alt="StratomeX usage scenario">
-                  </a>
-                  <div class="caption">
-                    <a href="./v/stratomex" target="_blank">
-                      <h3>StratomeX</h3>
-                    </a>
-                    <p>Reproducing previously published Use Cases of the StratomeX visualization technique, highlighting reproducibility and storytelling aspects of Vistories.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="source">
-            <h2 class="page-header">Source Code</h2>
-            <p>The source code for our prototype is <a href="https://github.com/Caleydo/caleydo_clue">available on GitHub</a>. <b>Vistories are built with </b></p>
-               <a href="http://caleydo.org" alt="Caleydo Logo"><img style="width: 200px" src="http://caleydo.org/assets/images/logos/caleydo.svg" type="image/svg+xml"></a>
-          </section>
-          <section id="team">
-            <h2 class="page-header">Team</h2>
-            <p>
-              (in alphabetical order)
-            </p>
-
-            <h3>Nils Gehlenborg</h3>
-            <p>Department of Biomedical Informatics at Harvard Medical School</p>
-            <p>
-             <i class="fa fa-globe"></i>&nbsp;<a href="http://gehlenborglab.org">http://gehlenborglab.org</a> |
-             <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/nils_gehlenborg">nils_gehlenborg</a> |
-             <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/ngehlenborg">ngehlenborg</a>
-            </p>
-
-            <h3>Samuel Gratzl</h3>
-            <p>Department of Computer Science at Johannes Kepler University Linz</p>
-            <p>
-             <i class="fa fa-globe"></i>&nbsp;<a href="http://sgratzl.github.io">http://sgratzl.github.io</a> |
-             <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/sgratzl">sgratzl</a>
-            </p>
-
-            <h3>Alexander Lex</h3>
-            <p>Scientific Computing and Imaging Institute at University of Utah</p>
-            <p>
-             <i class="fa fa-globe"></i>&nbsp;<a href="http://alexander-lex.net">http://alexander-lex.net</a> |
-             <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/alexander_lex">alexander_lex</a> |
-             <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/alexsb">alexsb</a>
-            </p>
-
-            <h3>Marc Streit</h3>
-            <p>Department of Computer Science at Johannes Kepler University Linz</p>
-            <p>
-             <i class="fa fa-globe"></i>&nbsp;<a href="http://marc-streit.com">http://marc-streit.com</a> |
-             <i class="fa fa-twitter"></i>&nbsp;<a href="https://twitter.com/marc_streit">marc_streit</a> |
-             <i class="fa fa-github"></i>&nbsp;<a href="https://github.com/marc_streit">marc_streit</a>
-            </p>
-            <p>
-              <i>We thank Nicola Cosgrove (<a href="https://github.com/NicolaLady">@NicolaLady</a>) for contributions to the prototype and the video.</i>
-            </p>
-                      </section>
-
-                      <section id="publication">
-                          <h2 class="page-header">Publication</h2>
-                          <p>
-                          Vistories are based on a paper to appear at EuroVis 2016:</p>
-                          <p>
+				  <section id="publication">
+					  <h2 class="page-header">Publication</h2>
+					  <p>
+					  Vistories are based on a paper to appear at EuroVis 2016:</p>
+					  <p>
 
 <a href="http://caleydo.org/publications/2016_eurovis_clue/">Samuel Gratzl, Alexander Lex, Nils Gehlenborg, Nicola Cosgrove, Marc Streit <br>
 <b>From Visual Exploration to Storytelling and Back Again</b> <br>
@@ -159,39 +98,7 @@ Computer Graphics Forum (EuroVis '16) (to appear), 2016 <br></a>
 </p>
 
 
-                        </section>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        &nbsp;
-        <!--<p class="text-muted"></p>-->
-      </div>
-    </footer>
-    <!-- Le javascript
-      ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-      (function($) {
-        $(document).ready(function() {
-          $('body').scrollspy({
-            target: '#navbar-collapse-1'
-          });
-        });
-      })(jQuery)
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45998043-3', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-  </body>
-</html>
+					</section>
+	</div>
+  </div>
+</div>

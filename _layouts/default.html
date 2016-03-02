@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article">
+    {% include head.html %}
+
+    <body>
+		{% include header.html %}
+		
+		{{ content }}
+		
+		{% include footer.html %}
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+		{% if site.use_analytics == true %}
+			{% include google_analytics.html %}
+		{% endif %} 
+    </body>
+</html>

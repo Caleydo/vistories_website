@@ -1,0 +1,26 @@
+---
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="wrap">
+      <div class="centered">
+        <img class="logo-404-svg" src="{{ site.baseurl }}/images/logos/vistory-logo.svg">
+        <div class="message-404">
+          Page not found<br>
+
+          <a href="/"><i class="fa fa-home"></i></a>
+        </div>
+      </div>
+    </div>
+
+    {% if site.use_analytics == true %}
+    {% include google_analytics.html %}
+    {% endif %}
+  </body>
+
+</html>

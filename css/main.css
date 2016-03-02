@@ -228,3 +228,11 @@
 	color: #FFA500;
 	font-style: italic;
   }
+  
+div .vistory_list {
+  display: flex;
+  align-items: baseline;
+}
+div.vistory {
+  width: 48%;
+}
