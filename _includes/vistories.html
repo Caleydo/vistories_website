@@ -1,6 +1,7 @@
 
 <div class="vistory_list">
 {% for vistory in site.vistories %}
+{% unless vistory.hidden %}
   <div class="vistory">
     <a class="thumbnail" href="{{site.baseurl}}/v/{{vistory.name}}" target="_blank">
 	  <img src="{{site.baseurl}}/assets/vistories/{{vistory.name}}.png" alt="{{vistory.title}}">
@@ -13,5 +14,6 @@
       <p></p>
     </div>
   </div>
+{% endunless %}
 {% endfor %}
 </div>
