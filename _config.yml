@@ -13,7 +13,6 @@ safe: false
 lsi: false
 google_analytics: "'UA-45998043-3'"
 use_analytics: true
-server_url: http://demo.caleydo.org
 
 gems:
   - jekyll-redirect-from
