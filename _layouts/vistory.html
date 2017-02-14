@@ -2,7 +2,7 @@
 <html lang="en" itemscope itemtype="http://schema.org/Article">
   {% include head.html %}
   <head>
-    <!--<meta http-equiv="refresh" content="0;URL={{site.server_url}}/{{page.vistory}}">-->
+    <!--<meta http-equiv="refresh" content="0;URL={{page.vistory}}">-->
   </head>
 
   <body >
@@ -26,7 +26,7 @@
 			
 			
 			<p>
-				You should be automatically redirect to <a href="{{site.server_url}}/{{page.vistory}}">{{site.server_url}}/{{page.vistory}}</a>
+				You should be automatically redirect to <a href="http://{{page.vistory}}">http://{{page.vistory}}</a>
 			</p>
 		</div>
 	  </div>
@@ -42,7 +42,7 @@
 	<script>
 		var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
 		function redirect() {
-			window.location="{{site.server_url}}/{{page.vistory}}";
+			window.location="{{page.vistory}}";
 		}
 		if (is_chrome) {
 			redirect();
