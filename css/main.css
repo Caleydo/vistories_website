@@ -223,16 +223,16 @@
     border: 1px solid #DDD;
     background-color: #f5f5f5;
   }
-  
+
   .award {
 	color: #FFA500;
 	font-style: italic;
   }
-  
+
 div .vistory_list {
   display: flex;
   align-items: baseline;
 }
 div.vistory {
-  width: 48%;
+  width: 98%;
 }
